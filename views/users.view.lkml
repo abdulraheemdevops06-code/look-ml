@@ -18,12 +18,8 @@ view: users {
     type: string
     sql: ${TABLE}.city ;;
   }
-  measure: cout_city {
-    type: count
-    sql: ${city} ;;
-  }
-
-  dimension: country {
+ 
+dimension: country {
     type: string
     map_layer_name: countries
     sql: ${TABLE}.country ;;
