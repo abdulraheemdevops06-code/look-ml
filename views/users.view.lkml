@@ -18,6 +18,10 @@ view: users {
     type: string
     sql: ${TABLE}.city ;;
   }
+  measure: cout_city {
+    type: count
+    sql: ${city} ;;
+  }
 
   dimension: country {
     type: string
